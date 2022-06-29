@@ -7,7 +7,7 @@
   "author": "Guido La Rosa",
   "scripts": {
     "lint": "eslint *.ts*",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files && NODE_ENV=production babel src/themes --out-dir dist/themes --copy-files"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.6",
