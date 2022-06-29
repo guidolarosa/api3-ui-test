@@ -4,6 +4,7 @@
   "main": "./src/index.tsx",
   "types": "./src/index.tsx",
   "license": "MIT",
+  "author": "Guido La Rosa",
   "scripts": {
     "lint": "eslint *.ts*",
     "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
