@@ -48,7 +48,7 @@ export const Navbar = (props : any) => {
                 <Box as="nav" sx={{display: ['none', 'block', 'block', 'block']}} className={'desktop-nav'}>
                     <Flex as="ul" sx={{listStyle: 'none'}}>
                     {Links.map((link, index) => (
-                        <Box as="li">
+                        <Box as="li" key={index}>
                             <NavbarLink link={link}>
                                 {link.label}
                             </NavbarLink>
