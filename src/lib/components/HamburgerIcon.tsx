@@ -2,9 +2,9 @@ import * as React from "react";
 import { useState } from 'react';
 import { Flex, Box } from 'rebass';
 import styled, { ThemeContext } from 'styled-components';
+import theme from '../themes/default';
 
 export const HamburgerIcon = (props : any) => {
-  const theme = React.useContext(ThemeContext);
   const [isActive, setIsActive] = useState(false);
 
   const lineStyle = {

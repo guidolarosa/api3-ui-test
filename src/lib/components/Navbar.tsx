@@ -4,6 +4,7 @@ import styled, { ThemeContext } from 'styled-components';
 import { HamburgerIcon } from "./HamburgerIcon";
 import * as Popover from '@radix-ui/react-popover';
 import NavbarLink from './NavbarLink';
+import theme from '../themes/default';
 
 const Links = [
     {
@@ -27,7 +28,6 @@ const Links = [
 ];
 
 export const Navbar = (props : any) => {
-    const theme = React.useContext(ThemeContext);
     return (
         <StyledNavbar data-aos={'fade-down'} className="navbar" sx={{position: 'relative', zIndex: '1'}}>
             <Flex 

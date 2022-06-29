@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Button as RBButton, Text, Box } from 'rebass';
 import styled, { ThemeContext } from 'styled-components';
+import theme from '../themes/default';
 
 export const Button = (props : any) => {
-  const theme = React.useContext(ThemeContext);
   return (
     <StyledButton theme={theme} {...props} sx={{
       color: theme.colors.text[9],

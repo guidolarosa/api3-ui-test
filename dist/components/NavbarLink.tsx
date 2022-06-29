@@ -1,10 +1,10 @@
 import { useState, useContext } from 'react';
 import { Link, Box } from 'rebass';
 import styled, { ThemeContext } from 'styled-components';
+import theme from '../themes/default';
+
 
 export const NavbarLink = (props : any) => {
-
-    const theme = useContext(ThemeContext);
     const [linkClass, setLinkClass] = useState('pre-hover');
     return (
         <StyledNavbarLink theme={theme} {...props}
