@@ -1,6 +1,6 @@
 {
   "name": "api3-ui",
-  "version": "0.1.1-pre",
+  "version": "0.1.1",
   "main": "./src/index.tsx",
   "types": "./src/index.tsx",
   "license": "MIT",
