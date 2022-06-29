@@ -1,8 +1,8 @@
 {
   "name": "api3-ui",
   "version": "0.1.2-pre",
-  "main": "./src/index.tsx",
-  "types": "./src/index.tsx",
+  "main": "./dist/index.tsx",
+  "types": "./dist/index.tsx",
   "license": "MIT",
   "author": "Guido La Rosa",
   "scripts": {
