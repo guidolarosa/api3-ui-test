@@ -7,7 +7,10 @@
   "author": "Guido La Rosa",
   "scripts": {
     "lint": "eslint *.ts*",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files"
+    "build": "rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files",
+    "minor": "npm-bump minor",
+    "major": "npm-bump major",
+    "patch": "npm-bump patch"
   },
   "devDependencies": {
     "@babel/cli": "^7.18.6",
