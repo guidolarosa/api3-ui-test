@@ -2,7 +2,7 @@ import { useState, useContext } from 'react';
 import { Link, Box } from 'rebass';
 import styled, { ThemeContext } from 'styled-components';
 import theme from '../themes/default';
-
+import './../styles/globals.css';
 
 export const NavbarLink = (props : any) => {
     const [linkClass, setLinkClass] = useState('pre-hover');
@@ -20,6 +20,7 @@ export const NavbarLink = (props : any) => {
                 }, 500)
             }}
             sx={{
+                color: props.backgroundColor == 'light' ? theme.colors.black[10] : theme.colors.white[10],
                 position: 'relative',
                 cursor: 'pointer',
                 '&:hover': {

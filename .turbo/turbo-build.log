@@ -1,0 +1,5 @@
+[34mapi3-ui:build[0m: cache hit, replaying output [2m76eb15e4e0e95e9f[0m
+[34mapi3-ui:build: [0myarn run v1.22.19
+[34mapi3-ui:build: [0m$ rm -rf dist && NODE_ENV=production babel src/lib --out-dir dist --copy-files
+[34mapi3-ui:build: [0mSuccessfully compiled 0 files with Babel (27ms).
+[34mapi3-ui:build: [0mDone in 2.36s.

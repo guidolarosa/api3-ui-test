@@ -10,7 +10,7 @@ export const HamburgerIcon = (props : any) => {
   const lineStyle = {
     width: '1.75rem',
     height: '1px',
-    background: theme.colors.text[9],
+    background: props.backgroundColor == 'dark' ? theme.colors.white[9] : theme.colors.black[9],
     position: 'absolute',
     left: 0,
     transition: '0.15s ease-in-out all',
