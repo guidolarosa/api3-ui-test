@@ -108,14 +108,14 @@ export const Button = (props : any) => {
             top: 0,
             left: 0,
             borderRadius: '3rem',
-            width: '7.5rem',
-            height: '7.5rem',
+            width: '15rem',
+            height: '15rem',
             background: `radial-gradient(
               ${theme.colors.text[3]}, ${theme.colors.text[0]})`,
             zIndex: '5',
             
             pointerEvents: 'none',
-            transform: `translate(calc(${glarePosition[0]}px - 3.75rem), calc(${glarePosition[1]}px - 3.75rem))`,
+            transform: `translate(calc(${glarePosition[0]}px - 7.5rem), calc(${glarePosition[1]}px - 3.75rem))`,
           }}
         />
       </Box>
