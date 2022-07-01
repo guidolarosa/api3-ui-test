@@ -1,9 +1,9 @@
 import * as React from "react";
 import { Box } from 'rebass';
 import styled from 'styled-components';
-import theme from '../themes/default';
-import API3Logo from './../img/API Logo.svg';
-import './../styles/globals.css'
+import theme from './../themes/default';
+import './../public/css/globals.css';
+import API3Logo from './../public/img/API Logo.svg';
 
 export const Logo = (props : any) => {
 
@@ -21,9 +21,9 @@ export const Logo = (props : any) => {
         {...props}
         >
         <Box 
-            src={API3Logo}
-             alt="API3" 
+            alt="API3" 
             as='img'
+            src={API3Logo}
             sx={{
                 filter: props.type == 'dark' ? 'none' : 'invert(0.7)'
             }}

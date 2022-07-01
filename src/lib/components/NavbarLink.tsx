@@ -1,8 +1,8 @@
-import { useState, useContext } from 'react';
+import React, { useState, useContext } from 'react';
 import { Link, Box } from 'rebass';
-import styled, { ThemeContext } from 'styled-components';
+import styled from 'styled-components';
 import theme from '../themes/default';
-import './../styles/globals.css';
+// import './../styles/globals.css';
 
 export const NavbarLink = (props : any) => {
     const [linkClass, setLinkClass] = useState('pre-hover');

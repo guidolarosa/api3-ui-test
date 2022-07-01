@@ -6,7 +6,7 @@ import * as Popover from '@radix-ui/react-popover';
 import NavbarLink from './NavbarLink';
 import Logo from './Logo';
 import theme from '../themes/default';
-import './../styles/globals.css';
+// import './../styles/globals.css';
 
 const Links = [
     {
