@@ -152,7 +152,7 @@ export const Button = (props : ButtonProps) => {
 Button.defaultProps = {
   type: 'primary',
   children: '',
-  useGlare: false
+  useGlare: true
 }
 
 const StyledButton = styled(RBButton)``;
