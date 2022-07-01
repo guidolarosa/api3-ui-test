@@ -3,7 +3,7 @@ import { Button as RBButton, Text, Box } from 'rebass';
 import styled from 'styled-components';
 import theme from '../themes/default';
 export const Button = (props) => {
-    const { type, sx, children, useGlare } = props;
+    const { type, sx, children, useGlare, variant } = props;
     const [glarePosition, setGlarePosition] = React.useState([]);
     const buttonRef = React.useRef(null);
     return (React.createElement(StyledButton, Object.assign({ theme: theme, ref: buttonRef }, props, { onMouseMove: (e) => {
@@ -14,7 +14,7 @@ export const Button = (props) => {
                 e.pageX - leftOffset,
                 e.pageY - topOffset
             ]);
-        }, sx: Object.assign({ color: theme.colors.text[9], background: theme.colors.background, height: '3.5rem', width: 'fit-content', borderRadius: 0, pr: '2rem', pl: type == 'primary' ? '2rem' : '1rem', position: 'relative', cursor: 'pointer', mb: '0.5rem', '&:hover': {
+        }, sx: Object.assign({ color: theme.colors.text[9], background: 'blue', height: '3.5rem', width: 'fit-content', borderRadius: 0, pr: '2rem', pl: type == 'primary' ? '2rem' : '1rem', position: 'relative', cursor: 'pointer', mb: '0.5rem', '&:hover': {
                 '.gradient-box, .gradient-line': {
                     width: '100%'
                 },
@@ -105,6 +105,6 @@ export const Button = (props) => {
 Button.defaultProps = {
     type: 'primary',
     children: '',
-    useGlare: true
+    useGlare: false
 };
 const StyledButton = styled(RBButton) ``;

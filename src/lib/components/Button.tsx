@@ -7,12 +7,13 @@ interface ButtonProps {
   type: 'primary' | 'secondary',
   sx: any,
   children: any,
-  useGlare: boolean
+  useGlare: boolean,
+  variant: any
 }
 
 export const Button = (props : ButtonProps) => {
   
-  const { type, sx, children, useGlare } = props;
+  const { type, sx, children, useGlare, variant } = props;
 
   const [glarePosition, setGlarePosition] = React.useState<any>([]);
 
@@ -30,7 +31,7 @@ export const Button = (props : ButtonProps) => {
         ])
       }} sx={{
       color: theme.colors.text[9],
-      background: theme.colors.background,
+      background: 'blue',
       height: '3.5rem',
       width: 'fit-content',
       borderRadius: 0,
@@ -152,7 +153,7 @@ export const Button = (props : ButtonProps) => {
 Button.defaultProps = {
   type: 'primary',
   children: '',
-  useGlare: true
+  useGlare: false
 }
 
 const StyledButton = styled(RBButton)``;

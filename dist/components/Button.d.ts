@@ -3,6 +3,7 @@ interface ButtonProps {
     sx: any;
     children: any;
     useGlare: boolean;
+    variant: any;
 }
 export declare const Button: {
     (props: ButtonProps): JSX.Element;
